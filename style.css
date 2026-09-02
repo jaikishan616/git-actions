@@ -1,0 +1,111 @@
+```css
+/* Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #ccc;
+}
+
+/* Game containers */
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.game {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.game:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Buttons */
+button {
+  background: #00c6ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0072ff;
+  transform: scale(1.05);
+}
+
+/* Input */
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Results */
+.result {
+  min-height: 25px;
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+/* Tic-Tac-Toe board */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  justify-content: center;
+  gap: 5px;
+  margin: 15px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .game {
+    width: 85%;
+  }
+}
+```
